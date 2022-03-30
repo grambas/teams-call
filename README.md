@@ -10,9 +10,9 @@ When calling the script it will exit with
 * 1 if you're not
 
 ## Teams Log file
-!! Important !! Use Microsoft Teams **Preview** version and not Insider. Insider version doesn't generate log file
-Log file path depends on installation method. Possible places:
-/home/{USER}/snap/teams/6/.config/Microsoft/Microsoft Teams/logs.txt
+!! Important !! Use Microsoft Teams **Preview** version and not Insider. Insider version doesn't generate log file.
+Log file path depends on installation method. Possible custom place:
+* /home/{USER}/snap/teams/6/.config/Microsoft/Microsoft Teams/logs.txt
 
 ## Python script
 
@@ -22,10 +22,11 @@ import teams_call
 isInCall = teams_call.isInCall()
 ```
 
-If you know log file path call direkt with argument:
+If you know log file path call direct with argument:
 ```
 python3 teams_call.py "/path/to/logs.txt"
 ```
+
 ## How?
 
 You don't wanna know.
